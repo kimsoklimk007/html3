@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="គេហទំព័រ NUBB" />
+    <title>គេហទំព័រ NUBB</title>
+    <style>
+      :root {
+        --primary-color: #1a5276;
+        --secondary-color: #d35400;
+        --accent-color: #e67e22;
+        --text-color: #2c3e50;
+        --light-bg: #f8f9fa;
+        --card-bg: #ffffff;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Khmer OS System", "Nokora", "Arial", sans-serif;
+      }
+
+      body {
+        line-height: 1.8;
+        color: var(--text-color);
+        background-color: var(--light-bg);
+        font-size: 16px;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary-color), #2e86c1);
+        color: white;
+        text-align: center;
+        padding: 3rem 0;
+        margin-bottom: 2.5rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        font-family: "Khmer OS Muol Light", "Khmer OS Muol", "Khmer OS System",
+          sans-serif;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 1.2rem;
+        font-size: 1.8rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        background: var(--card-bg);
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        margin-bottom: 2.5rem;
+        transition: var(--transition);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        margin-bottom: 1.2rem;
+        color: #444;
+        line-height: 1.8;
+      }
+
+      figure {
+        text-align: center;
+        margin: 3rem 0;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+
+      figure:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: var(--transition);
+        border: 1px solid #eee;
+      }
+
+      img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      figcaption {
+        margin-top: 1.2rem;
+        font-style: normal;
+        color: #666;
+        font-size: 0.95rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 0;
+        background: linear-gradient(135deg, var(--primary-color), #1a5276);
+        color: white;
+        margin-top: 3rem;
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--accent-color);
+        color: white;
+        padding: 0.7rem 1.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        margin-top: 1rem;
+        transition: var(--transition);
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 8px rgba(230, 126, 34, 0.3);
+      }
+
+      .btn:hover {
+        background: #e67e22;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(230, 126, 34, 0.4);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 2rem 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        section {
+          padding: 1.8rem;
+          margin: 0 0 2rem 0;
+          border-radius: 0;
+        }
+
+        .btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1
+          style="
+            font-family: 'Khmer OS Muol Light', 'Khmer OS Muol',
+              'Khmer OS System', sans-serif;
+          "
+        >
+          សូមស្វាគមន៍មកកាន់ NUBB
+        </h1>
+        <p
+          style="
+            font-family: 'Khmer OS Muol Light', 'Khmer OS Muol',
+              'Khmer OS System', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+          "
+        >
+          សាកលវិទ្យាល័យជាតិបាត់ដំបង
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>អំពីយើង</h2>
+        <p>
+          សូមស្វាគមន៍មកកាន់គេហទំព័រផ្លូវការរបស់សាកលវិទ្យាល័យជាតិភូមិន្ទបាត់ដំបង។
+          យើងខ្ញុំជាស្ថាប័នអប់រំថ្នាក់ឧត្តមសិក្សាដែលបម្រើសហគមន៍ដោយផ្តល់នូវគុណភាពអប់រំដ៏ខ្ពង់ខ្ពស់។
+        </p>
+        <button id="moreInfoBtn" class="btn">អានបន្ថែម</button>
+        <div
+          id="moreInfo"
+          style="
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-right: 4px solid var(--accent-color);
+          "
+        >
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem">
+            ព័ត៌មានបន្ថែម
+          </h3>
+          <p>
+            សាកលវិទ្យាល័យជាតិភូមិន្ទបាត់ដំបង (NUBB)
+            គឺជាស្ថាប័នអប់រំថ្នាក់ឧត្តមសិក្សាដ៏ធំមួយនៅក្នុងតំបន់ខាងលិចប្រទេសកម្ពុជា។
+            យើងផ្តោតលើការអភិវឌ្ឍធនធានមនុស្សតាមរយៈការអប់រំ ការស្រាវជ្រាវ
+            និងសេវាសហគម។
+          </p>
+          <p style="margin-top: 1rem">
+            សាកលវិទ្យាល័យយើងមានដាក់ឱ្យដំណើរការវគ្គសិក្សាជាច្រើនដែលផ្តោតលើវិស័យសំខាន់ៗដូចជា
+            វិទ្យាសាស្រ្ត វិស្វកម្ម កសិកម្ម និងវិទ្យាសាស្រ្តសង្គម។
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>វគ្គសិក្សារបស់យើង</h2>
+        <p>
+          សាកលវិទ្យាល័យជាតិភូមិន្ទបាត់ដំបងផ្តល់វគ្គសិក្សាជាច្រើនកម្រិត
+          ដែលរួមមាន៖
+        </p>
+        <ul style="margin: 1rem 0 1rem 2rem; color: #444; line-height: 1.8">
+          <li>វិទ្យាសាស្រ្តកុំព្យូទ័រ</li>
+          <li>វិស្វកម្មអគ្គិសនី</li>
+          <li>វិស្វកម្មសំណង់</li>
+          <li>វិទ្យាសាស្រ្តកសិកម្ម</li>
+          <li>វិទ្យាសាស្រ្តសង្គម</li>
+        </ul>
+        <p>
+          យើងមានគ្រូអ្នកគ្រូដែលមានជំនាញខ្ពស់
+          និងមានបទពិសោធន៍យ៉ាងយូរឆ្នាំក្នុងការបណ្តុះបណ្តាល។
+        </p>
+      </section>
+
+      <section>
+        <h2>ទំនាក់ទំនងយើងខ្ញុំ</h2>
+        <p>សូមមេត្តាទំនាក់ទំនងមកយើងខ្ញុំតាមរយៈព័ត៌មានខាងក្រោម៖</p>
+        <div style="margin: 1.5rem 0; line-height: 1.8">
+          <p>
+            អាសយដ្ឋាន៖ ផ្លូវជាតិលេខ ៥ សង្កាត់ចំរើនផល ក្រុងបាត់ដំបង ខេត្តបាត់ដំបង
+          </p>
+          <p>អ៊ីមែល៖ info@nubb.edu.kh</p>
+          <p>ទូរស័ព្ទ៖ +855 53 730 344</p>
+        </div>
+      </section>
+
+      <figure>
+        <a
+          href="https://nubb.edu.kh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./icone/NUBB copy.png"
+            alt="ឡូហ្គោ NUBB"
+            style="max-width: 300px; margin: 0 auto; display: block"
+          />
+        </a>
+        <figcaption>
+          ចុចលើឡូហ្គោខាងលើដើម្បីចូលទៅកាន់គេហទំព័រផ្លូវការរបស់សាកលវិទ្យាល័យជាតិភូមិន្ទបាត់ដំបង
+        </figcaption>
+      </figure>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          រក្សាសិទ្ធិគ្រប់យ៉ាង &copy;
+          <span id="currentYear">2025</span> សាកលវិទ្យាល័យជាតិភូមិន្ទបាត់ដំបង
+          (NUBB)
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.9em; opacity: 0.9">
+          គំរោងអភិវឌ្ឍន៍ព័ត៌មានវិទ្យាសម្រាប់គ្រប់គ្រងសាកលវិទ្យាល័យ
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Add interactivity when the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Toggle more info section
+        const moreInfoBtn = document.getElementById("moreInfoBtn");
+        const moreInfo = document.getElementById("moreInfo");
+
+        if (moreInfoBtn && moreInfo) {
+          moreInfoBtn.addEventListener("click", function () {
+            if (moreInfo.style.display === "none" || !moreInfo.style.display) {
+              moreInfo.style.display = "block";
+              moreInfoBtn.textContent = "បិទព័ត៌មាន";
+              // Smooth scroll to the expanded content
+              moreInfo.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            } else {
+              moreInfo.style.display = "none";
+              moreInfoBtn.textContent = "អានបន្ថែមព័ត៌មាន";
+            }
+          });
+        }
+
+        // Update current year in footer
+        const yearElement = document.getElementById("currentYear");
+        if (yearElement) {
+          const currentYear = new Date().getFullYear();
+          yearElement.textContent = currentYear;
+        }
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId !== "#") {
+              document.querySelector(targetId).scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Add animation on scroll for sections
+        const animateOnScroll = () => {
+          const sections = document.querySelectorAll("section");
+          sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100) {
+              section.style.opacity = "1";
+              section.style.transform = "translateY(0)";
+            }
+          });
+        };
+
+        // Set initial state for animation
+        document.querySelectorAll("section").forEach((section) => {
+          section.style.opacity = "0";
+          section.style.transform = "translateY(20px)";
+          section.style.transition =
+            "opacity 0.6s ease-out, transform 0.6s ease-out";
+        });
+
+        // Run once on page load
+        setTimeout(animateOnScroll, 100);
+
+        // Run on scroll
+        window.addEventListener("scroll", animateOnScroll);
+      });
+    </script>
+  </body>
+</html>
